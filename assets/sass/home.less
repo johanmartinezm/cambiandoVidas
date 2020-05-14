@@ -1,0 +1,522 @@
+.imageHome{
+    background-image: url(@bgImage);
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    height: 100%;
+    .fontGothambold();
+
+    h2{
+        color: @yellow;        
+        .font-size(40);
+        margin-top: 90px;
+        text-shadow: 2px 2px #000;
+        
+    }
+
+    .fraseWhite{
+        color: @white;
+        text-shadow: 2px 2px #000;
+    }
+}
+
+.videoSeccion{
+    background-image: url(@bgImageVideo);
+    background-position: center;
+    background-size: cover;
+    
+
+    .contVideo{
+        background-color: #1a1d4f;
+        border-radius: 30px;
+       
+        width: 50%;
+        height: 300px;
+        color: @white;
+        margin-bottom: 30px;
+        @media (min-width: 720px) and (max-width: 959px) {
+            width: 90%;
+            height: 400px;
+        }
+        @media (max-width: 719px) {
+            width: 90%;
+            height: 400px;
+        }
+
+        h2{
+            .font-size(25);    
+            .fontGothambold();
+        }
+
+        p{
+            .font-size(22); 
+            .fontNunitoregular();
+        }
+        
+        
+
+    }
+
+    .cont-descr{
+        
+
+        h2{
+            color: @yellow2;   
+            .fontGothambold();         
+        }
+
+        p{         
+            
+            color: @blue;
+
+            strong{
+                .fontGothambold();
+            }
+            
+        }
+    }
+
+
+}
+
+.bannerInfo{
+    background-image: url(@bgBannersInfo);
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    color: @white;
+
+    p{
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+
+    ul{
+        li{
+            .font-size(19); 
+            text-align: left;
+        }
+    }
+}
+
+.infoTtitle{
+    background-image: url(@bgInfoTitle);
+    background-position: center;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .fontGothambold();
+    .font-size(50);
+}
+
+.infoFases{
+
+    div{
+        padding-top: 50px;
+        padding-bottom: 40px;;
+        background-size: cover;
+        height: auto;
+        .font-size(28);
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            .font-size(23);
+        }
+
+        &.infoAguda{
+            background-image: url(@bgInfoAguda);   
+            background-position: top;         
+            @media (min-width: 720px) and (max-width: 959px) {
+                padding-top: 66px;
+            }
+        }
+
+        &.asintomatica{
+            background-image: url(@bgInfoAsintoma);
+            @media (min-width: 720px) and (max-width: 959px) {
+                background-image: none;
+                background-color: #de4b53;
+            }
+
+            @media (max-width: 719px) {
+                background-image: none;
+                background-color: #de4b53;
+            }
+        }
+
+        &.cronica{
+            background-image: url(@bgInfoCronica);
+            @media (min-width: 720px) and (max-width: 959px) {
+                background-image: none;
+                background-color: #db3c4a;
+            }
+
+            @media (max-width: 719px) {
+                background-image: none;
+                background-color: #db3c4a;
+            }
+
+            p{
+                width: 80%;
+                margin-left: 10%;
+
+                @media (max-width: 719px) {
+                    width: 90%;
+                    margin-left: 5%;
+                }
+            }        
+        }
+
+        h3{
+            .fontGothambold();
+            .font-size(50);
+            color: @white;
+            margin-bottom: 30px;
+            min-height: 90px;
+
+            @media (min-width: 720px) and (max-width: 959px) {
+                min-height: auto;
+                .font-size(35);
+            }
+
+            @media (max-width: 719px) {
+                min-height: auto;
+                .font-size(35);
+            }
+           
+        }
+
+        p{
+            padding-bottom: 20px;
+            &.subtitle{
+                .fontGothambold();
+                .font-size(35);
+                @media (min-width: 720px) and (max-width: 959px) {
+                    .font-size(28);
+                }
+
+                @media (max-width: 719px) {
+                    .font-size(26);
+                }
+            }
+        }
+
+        
+    }
+   
+}
+.paisTtitle{
+    background-image: url(@bgTitlePais);
+    background-position: center;
+    background-size: cover;
+    color: @white;
+    
+    h2{
+        width: 85%;
+        margin-left: 8%;
+        .font-size(50);
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (max-width: 719px) {
+            .font-size(40);
+        }
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            .font-size(40);
+        }
+    }
+
+    
+        
+    
+}
+
+.infoPais{
+    .infoPersonas{
+        background-image: url(@bgPaisNumero);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-color: #f1c526;
+       
+        padding-top: 9%;
+        padding-bottom: 60px;
+
+        
+        
+        @media (max-width: 719px) {
+            background-size: cover;
+            background-position: top;
+        }
+
+        h3{
+            .fontGothambold();
+            .font-size(100);
+            color: @blue;
+            width: 50%;
+            margin-left: 10%;
+            line-height:4rem;
+
+            @media (max-width: 719px) {
+                .font-size(60);
+            }
+
+            @media (min-width: 720px) and (max-width: 959px) {
+                .font-size(60);
+            }
+
+        }
+
+        .subtitle{
+            color: @blue;
+            width: 50%;
+            margin-left: 10%;
+
+            @media (max-width: 719px) {
+                .font-size(30);
+            }
+        }
+
+        p{
+            width: 50%;
+            margin-left: 10%;
+            @media (max-width: 719px) {
+                .font-size(20);
+            }
+        }
+    }
+
+    .infoDiagnostico{
+        background-image: url(@bgDiagInfo);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-color: #d92b35;
+        padding-top: 9%;
+
+        @media (max-width: 719px) {
+            background-image: none;
+            padding-bottom: 9%;
+            height: 237px;
+            padding-top: 18%;
+        }
+        
+        
+
+        color: @white;
+
+        h3{
+            .font-size(60);
+            @media (min-width: 720px) and (max-width: 959px) {
+                .font-size(40);
+            }
+            @media (max-width: 719px) {
+                .font-size(40);
+            }
+            strong{
+                .fontGothambold();
+                .font-size(80);
+                @media (max-width: 719px) {
+                    .font-size(50);
+                }
+            }            
+            line-height:4rem;
+        }
+
+        
+    }
+}
+
+.infoTitle{
+    background-image: url(@bgTitleInfog);
+    background-position: top;
+    background-size: cover;
+    color: @white;
+    padding-bottom: 30px;
+    
+    h2{
+        width: 85%;
+        margin-left: 8%;
+        .font-size(50);
+        padding-top: 30px;
+
+        @media (max-width: 719px) {
+            .font-size(40);
+        }
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            .font-size(40);
+        }
+        
+    }
+
+    p{
+        .fontGothambold();
+        .font-size(60);
+
+        @media (max-width: 719px) {
+            .font-size(40);
+        }
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            .font-size(40);
+        }
+    }
+}
+
+.infoColombia{
+    
+
+    @media (max-width: 719px) {
+        height: auto;
+    }
+
+    @media (min-width: 720px) and (max-width: 959px) {
+        height: auto;
+    }
+
+    .infoMapa{
+        background-image: url('../images/Infografia03_01.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #f1c526;
+
+        @media (max-width: 719px) {
+            height: 204px;
+        }
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            padding-top: 57px;
+        }
+        
+        color: @white;
+        padding-top: 60px;
+        p{
+            line-height: 30px;
+            .font-size(60);
+            @media (min-width: 720px) and (max-width: 959px) {
+                .font-size(30);
+            }
+            &.subtitle{
+                .fontGothambold();
+                .font-size(30);
+
+                @media (min-width: 720px) and (max-width: 959px) {
+                    .font-size(25);
+                }
+            }
+
+
+        }
+        
+    }
+
+    .infoRiesgo{
+        padding-top: 40px;
+        background-image: url('../images/Infografia03_02.jpg');
+        background-size: cover;         
+        color: #000;
+
+        @media (max-width: 719px) {
+            background-image: none;
+            background-color: #fff;
+            height: 204px;
+        }
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            background-image: none;
+            background-color: #fff;
+            padding-top: 35px;
+        }
+
+        h3{
+            .fontGothambold();
+            .font-size(45);
+            color: #d82b35;
+            @media (min-width: 720px) and (max-width: 959px) {
+                .font-size(35);
+            }
+        }
+
+        p{
+            .font-size(25);
+            @media (min-width: 720px) and (max-width: 959px) {
+                .font-size(20);
+            }
+        }
+
+    }
+
+    .infoInfect{
+        padding-top: 50px;
+        background-image: url('../images/Infografia03_03.jpg');
+        background-size: cover;           
+        .font-size(45);
+
+        @media (max-width: 719px) {
+            
+            height: 204px;
+        }
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            padding-top: 30px;
+            .font-size(25);
+            height: 204px;
+        }
+
+    }
+
+    .infoCasos{
+        padding-top: 45px;
+        background-image: url('../images/Infografia03_04.jpg'); 
+        background-repeat: no-repeat;  
+        background-color: #d92b35;     
+        .font-size(30);
+        height: 204px;
+
+        @media (max-width: 719px) {
+            background-image: none;
+            
+            
+        }
+
+        @media (min-width: 720px) and (max-width: 959px) {
+            background-image: none;
+            background-color: #d92b35;
+            .font-size(25);
+            height: 204px;
+        }
+
+        .subtitle{
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+}
+
+footer{
+    background-color: #e0e0e0;
+    .font-size(20);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2{
+        .font-size(20);
+        .fontGothambold();
+    }
+
+    p{
+        a{
+            color: #000;
+            :hover{
+                color: #000;
+            }
+        }
+    }
+
+    .contLogos{
+        margin-top: 30px;
+    }
+
+}

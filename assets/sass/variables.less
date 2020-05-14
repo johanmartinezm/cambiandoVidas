@@ -1,0 +1,57 @@
+@bgImage:'../images/Fondo01.jpg';
+@bgImageVideo:'../images/Fondo02.jpg';
+@bgVideo:'../images/FondoReproducto.png';
+@bgBannersInfo:'../images/Fondo03.jpg';
+@bgInfoTitle:'../images/infografiatitle.png';
+@bgInfoAguda:'../images/infografia01.png';
+@bgInfoAsintoma:'../images/infografia02.jpg';
+@bgInfoCronica:'../images/infografia03.png';
+@bgTitlePais:'../images/infografiaPais.jpg';
+@bgPaisNumero:'../images/infoPais.jpg';
+@bgDiagInfo:'../images/infografiaDiag.jpg';
+@bgTitleInfog:'../images/infografiaTitle.jpg';
+
+
+
+
+
+@white: #fff;
+@yellow: #ffc000;
+@blue: #1e1a42;
+@yellow2: #e9a919;
+
+.yellow{
+    color: @yellow;
+}
+
+
+/*FONTS*/
+
+@baseFontSize: 20;
+
+.font-size(@font-size: @baseFontSize) {
+	@rem: (@font-size / @baseFontSize);
+	font-size: @font-size * 1px;
+	font-size: ~"@{rem}rem"; 
+}
+
+
+.fontGothambold() {
+    font-family: 'gothambold';
+}
+
+.fontNunitoregular() {
+    font-family: 'nunito_sansregular';
+}
+
+.fontGothambook() {
+    font-family: 'gothambook';
+}
+
+.fontSize27{
+    .font-size(40);
+}
+
+.fontSize21{
+    .font-size(30);
+}
